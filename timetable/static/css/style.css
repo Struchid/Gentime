@@ -1,0 +1,111 @@
+body{
+    background: #F7F4F3 !important;
+}
+
+.div-content{
+    padding: 100px !important;
+    word-wrap: break-word;
+}
+
+/* Sidebar */
+#sidebar-wrapper{
+  z-index:1;
+  position: absolute;
+  width:0;
+  height:100%;
+  overflow-y:hidden;
+  background: #161925;
+  opacity:0.9;
+	transition:all .5s;
+	display:flex;
+	align-items:center;
+}
+
+/* Main Content */
+#page-content-wrapper{
+  width: 100%;
+  position: absolute;
+  padding:15px;
+	transition:all .5s;
+}
+
+#menu-toggle{
+	transition:all .3s;
+	font-size:2em;
+	color: #161925;
+}
+/* Change the width of the sidebar to display it*/
+#wrapper.menuDisplayed #sidebar-wrapper{
+  width:250px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper{
+  padding-left:250px;
+}
+
+/* Sidebar styling */
+.sidebar-nav{
+  padding:0;
+  list-style:none;
+	transition:all .5s;
+	width:100%;
+	text-align:center;
+}
+
+.sidebar-nav li{
+  line-height:40px;
+	width:100%;
+	transition:all .3s;
+	padding:10px;
+}
+
+.sidebar-nav li a {
+  display:block;
+  text-decoration:none;
+  color:#F7F4F3;
+  font-weight: bold;
+}
+
+.sidebar-nav li:hover{
+  background:#F2AF29;
+  transition: ease 0.5s;
+}
+
+.side-by-side{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}

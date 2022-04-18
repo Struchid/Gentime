@@ -1,7 +1,21 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-
-<h1>Gentime</h1>
-
+    <div class="col-lg-2"></div>
+    <div class="col-lg-5">
+        <h1>Gentime</h1>
+        <p>
+        Your online assistant to schedule generation.
+        </p>
+    </div>
+    <div class="col-lg-5">
+        <div class="center-button-div">
+            <a href="{% url 'prepare_data' %}">
+                <button>
+                    <span class="span-for-button">Begin</span>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-2"></div>
 {% endblock %}

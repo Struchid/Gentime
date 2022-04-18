@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="tab">
+        <button class="tab-links" onclick="openTab(event, 'Group')">Groups</button>
+        <button class="tab-links" onclick="openTab(event, 'Lecturer')">Lecturers</button>
+        <button class="tab-links" onclick="openTab(event, 'CourseUnit')">Course units</button>
+        <button class="tab-links" onclick="openTab(event, 'Faculty')">Faculties</button>
+        <button class="tab-links" onclick="openTab(event, 'Classroom')">Classrooms</button>
+        <button class="tab-links" onclick="openTab(event, 'Student')">Students</button>
+    </div>
+    <div id="Group" class="tabcontent">TEST</div>
+    <div id="Lecturer" class="tabcontent">TEST1</div>
+    <div id="CourseUnit" class="tabcontent">TEST2</div>
+    <div id="Faculty" class="tabcontent">TEST3</div>
+    <div id="Classroom" class="tabcontent">TEST4</div>
+    <div id="Student" class="tabcontent">TEST5</div>
+
+</div>
+{% endblock %}
